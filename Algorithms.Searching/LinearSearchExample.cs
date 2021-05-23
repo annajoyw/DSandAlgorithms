@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 namespace Algorithms.Searching
 {
     //NOTE: linear search can be innefficient sometimes because it checks every index for the value needed
+
+    //might be used in a situation where data cannot be sorted
     
     class LinearSearchExample
     {
