@@ -8,11 +8,7 @@ namespace Algorithms.Searching
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-
-        }
-
+        //this can only be used if the values are sorted!!
 
         /// <summary>
         /// a = array
