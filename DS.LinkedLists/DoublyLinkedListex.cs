@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static DS.LinkedLists.SinglyLinkedList;
 
-namespace DS.HashTables
+namespace DS.LinkedLists
 {
-    public class Class1
+    class DoublyLinkedListex
     {
     }
 }
