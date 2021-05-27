@@ -46,6 +46,7 @@
     <Compile Include="MoveZerosToEnd.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReturnIndexOfTwoValues.cs" />
+    <Compile Include="ReverseAnInt.cs" />
     <Compile Include="ReverseAString.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

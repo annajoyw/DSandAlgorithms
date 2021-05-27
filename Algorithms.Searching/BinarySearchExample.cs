@@ -44,7 +44,14 @@ namespace Algorithms.Searching
             return -1;
         }
     }
-    class BinarySearchExample
+
+    //Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+    class SearchExample
     {
+        public int SearchInsert(int[] nums, int target)
+        {
+            int i = nums.ToList().BinarySearch(target);
+            return i >= 0 ? i : ~i;
+        }
     }
 }
