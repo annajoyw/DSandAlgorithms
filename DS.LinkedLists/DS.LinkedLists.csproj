@@ -45,6 +45,7 @@
     <Compile Include="MergreSortedLinkedLists.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SinglyLinkedList.cs" />
+    <Compile Include="TraversingLinkedList.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
