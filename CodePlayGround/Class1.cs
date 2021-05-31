@@ -69,4 +69,19 @@ namespace CodePlayGround
         }
     }
 
+    public class Solution4
+    {
+        public int StrStr(string haystack, string needle)
+        {
+            if (needle == "")
+                return 0;
+            else if (haystack.Contains(needle))
+            {
+                return haystack.IndexOf(needle);
+            }
+            else
+                return -1;
+        }
+    }
+
 }
