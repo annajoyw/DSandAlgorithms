@@ -35,4 +35,38 @@ namespace CodePlayGround
             return s.Trim().Split().LastOrDefault().Length;
         }
     }
+
+    public class Solution3
+    {
+        public int MajorityElement(int[] nums)
+        {
+            int[] fr = new int[nums.Length];
+            int visited = -1;
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                int count = 1;
+                for (int j = i + 1; j < nums.Length; j++)
+                {
+                    if (nums[i] == nums[j])
+                    {
+                        count++;
+                        fr[j] = visited;
+                    }
+                }
+                if (fr[i] != visited)
+                    fr[i] = count;
+            }
+            foreach(var val in fr)
+            {
+                if (val == fr.Max())
+                {
+
+                }
+            }
+
+            return majorE;
+        }
+    }
+
 }
