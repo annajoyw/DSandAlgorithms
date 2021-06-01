@@ -69,6 +69,17 @@ namespace CodePlayGround
         }
     }
 
+    public class Solution5
+    {
+        public string LongestCommonPrefix(string[] strs)
+        {
+            foreach(var word in strs)
+            {
+                
+            }
+        }
+    }
+
     public class Solution4
     {
         public int StrStr(string haystack, string needle)
