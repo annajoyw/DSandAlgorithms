@@ -26,7 +26,7 @@ namespace CodePlayGround
 
                 int[] array = digits.ToArray();
                 int[] original = digits.ToArray();
-                    System.Array.Reverse(original);
+                System.Array.Reverse(original);
 
                 int finalScore1 = 0;
                 for (int i = 0; i < array.Length; i++)
@@ -44,8 +44,8 @@ namespace CodePlayGround
                 {
                     return true;
                 }
-               else return false;
-                
+                else return false;
+
             }
 
 
@@ -78,5 +78,23 @@ namespace CodePlayGround
         }
     }
 
+
+
+    public class Solution234
+    {
+        public int MissingNumber(int[] nums)
+        {
+            //missing num = n
+            int n = nums.Length - 1;
+
+            int total = (n + 1) * (n + 2) / 2;
+            for (int i = 0; i < n; i++)
+            
+                total -= nums[i];
+
+                return total;
+            
+        }
+    }
 }
 
