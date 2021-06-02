@@ -40,7 +40,7 @@ namespace CodePlayGround
                     finalScore2 += original[i] * Convert.ToInt32(Math.Pow(10, array.Length - i - 1));
                 }
 
-                if (array == original)
+                if (finalScore1 == finalScore2)
                 {
                     return true;
                 }
