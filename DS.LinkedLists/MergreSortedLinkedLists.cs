@@ -21,26 +21,26 @@ namespace DS.LinkedLists
             if (l1 == null) return l2;
             if (l2 == null) return l1;
 
-            var newHead = new ListNode(0); // Creating this dummy node ease the logic
-            var runnerHead = newHead;        // This is the runner node
+            var newHead = new ListNode(0); // dummy list to add values to
+            var runnerHead = newHead;        // pointer to beginning of list
 
-            while (l1 != null && l2 != null)
+            while (l1 != null && l2 != null) //while we have two lists do the following:
             {
-                if (l1.val >= l2.val)
+                if (l1.val >= l2.val) //compares values of nodes
                 {
-                    runnerHead.next = l2;
-                    l2 = l2.next;
+                    runnerHead.next = l2; //take this element, put in in our list and move forward 
+                    l2 = l2.next; //move pointer forward so we no longer see the current value in out next iteration
                 }
-                else
+                else //same thing as lines above but for if the value is l1 < l2
                 {
                     runnerHead.next = l1;
                     l1 = l1.next;
                 }
 
-                runnerHead = runnerHead.next;
+                runnerHead = runnerHead.next; //we got our element, this line moves the pointer to the next element
             }
 
-            // Simply add the 'leftover' from the while loop at the end 
+            // this checks and adds the 'leftover' from the while loop at the end of our list
             if (l1 != null) runnerHead.next = l1;
             if (l2 != null) runnerHead.next = l2;
 
