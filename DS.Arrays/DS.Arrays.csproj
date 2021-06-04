@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayContainsDuplicate.cs" />
+    <Compile Include="LongestCommonPrefix.cs" />
     <Compile Include="MaxProfit.cs" />
     <Compile Include="MergeTwoSortedArrays.cs" />
     <Compile Include="MoveZerosToEnd.cs" />
